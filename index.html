@@ -1,6 +1,252 @@
+<!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <h1>under construction</h1>
-  </body>
+
+<head>
+  <title>2022</title>
+  <style>
+    body {
+      background: #d63447;
+    }
+
+    * {
+      font-family: Helvetica, sans-serif;
+
+    }
+
+    h2 {
+      text-align: center;
+      color: #f6eedf;
+    }
+
+    h3,
+    h5 {
+      margin: 0.25em;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 2rem;
+    }
+
+    #recipes+section {
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    }
+
+    #pictures+section {
+      display: block;
+      column-count: 2;
+      column-gap: 0;
+      line-height: 0;
+    }
+
+    @media (max-width: 1200px) {
+      #pictures+section {
+        column-count: 4;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      #pictures+section {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 800px) {
+      #pictures+section {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 400px) {
+      #pictures+section {
+        column-count: 1;
+      }
+    }
+
+    #pictures+section img {
+      padding: 2px;
+      border: none;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    #pictures+section article {
+      padding: 0;
+      background: 0;
+      border: none;
+    }
+
+    article {
+      padding: 1em;
+      background: #d1cebd;
+      border-radius: 4px;
+    }
+
+    img {
+      box-sizing: border-box;
+      width: 100%;
+      max-height: 80vh;
+      object-fit: cover;
+      border: 4px solid black;
+    }
+
+    #recipes+section img {
+      max-height: 50vh;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th {
+      padding-top: 1em;
+      font-size: larger;
+    }
+
+    td {
+      padding: 0 0.25em;
+      line-height: 1.4;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    td:nth-child(1),
+    td:nth-child(2) {
+      width: 0;
+      white-space: nowrap;
+    }
+
+    td:nth-child(1) {
+      text-align: right;
+    }
+
+    ul {
+      font-size: smaller;
+    }
+
+    ol {
+      padding-top: 1em;
+    }
+
+    figure {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 id="books">Recommended Books</h2>
+  <section>
+    <article>
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/88/TheLeftHandOfDarkness1stEd.jpg" />
+      <h3>The Left Hand of Darkness</h3>
+      <h5>Ursula K. Le Guin</h5>
+      <ul>
+        <li>Science Fiction</li>
+      </ul>
+    </article>
+    <article>
+      <img src="https://madelinemiller.com/wp-content/uploads/2012/08/SongAchilles-pb-c-2.jpg" />
+      <h3>The Song of Achilles</h3>
+      <h5>Madeline Miller</h5>
+      <ul>
+        <li>Romance</li>
+        <li>Fantasy</li>
+      </ul>
+    </article>
+    <article>
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/I%27m_Glad_My_Mom_Died_Cover.png" />
+      <h3>I’m Glad My Mom Died</h3>
+      <h5>Jennette McCurdy</h5>
+      <ul>
+        <li>Memoir</li>
+      </ul>
+    </article>
+    <article>
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/ca/TheJoyLuckClub.jpg" />
+      <h3>The Joy Luck Club</h3>
+      <h5>Amy Tan</h5>
+      <ul>
+        <li>Fiction</li>
+      </ul>
+    </article>
+    <article>
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Braiding_Sweetgrass.jpg" />
+      <h3>Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants</h3>
+      <h5>Robin Wall Kimmerer</h5>
+      <ul>
+        <li>Nonfiction</li>
+      </ul>
+    </article>
+  </section>
+
+  <h2 id="recipes">Recommended Recipes</h2>
+  <section>
+    <article>
+      <h3>Best Lentil Soup</h3>
+      <h5>
+        <a href="https://cookieandkate.com/best-lentil-soup-recipe/#tasty-recipes-23764-jump-target">
+          COOKIE+kate
+        </a>
+      </h5>
+      <img src="https://cookieandkate.com/images/2015/02/spiced-lentil-soup-recipe-2.jpg" />
+    </article>
+    <article>
+      <h3>Citrus Lime Tofu Salad</h3>
+      <h5>
+        <a href="https://www.eatingwell.com/recipe/262094/citrus-lime-tofu-salad/">
+          EatingWell
+        </a>
+      </h5>
+      <img
+        src="https://www.eatingwell.com/thmb/f6eTthZ4klfrGkLCpYc03f3dYdg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4727256-ca1cc0cb72274b4fb2a143642b92141c.jpg" />
+    </article>
+    <article>
+      <h3>Chicken Soup with Spring Veggies</h3>
+      <h5>
+        <a
+          href="https://thecozyapron.com/simple-lemony-chicken-spring-veggie-soup-a-little-sunshine-in-my-spoon/#recipe-bookmark">
+          The Cozy Apron
+        </a>
+      </h5>
+      <img src="https://thecozyapron.com/wp-content/uploads/2014/05/lemony-chicken-soup_05-09-14_1_ca.jpg" />
+    </article>
+  </section>
+
+  <h2 id="pictures">Pictures</h2>
+  <section>
+    <img src="./media/00.jpeg" />
+    <img src="./media/01.jpg" />
+    <img src="./media/02.jpg" />
+    <img src="./media/03.jpg" />
+    <img src="./media/04.jpg" />
+    <img src="./media/05.jpg" />
+    <img src="./media/06.jpg" />
+    <img src="./media/07.jpg" />
+    <img src="./media/08.jpg" />
+    <img src="./media/09.jpg" />
+    <img src="./media/11.jpg" />
+    <img src="./media/12.jpg" />
+    <img src="./media/13.jpg" />
+    <img src="./media/14.jpeg" />
+    <img src="./media/15.jpg" />
+    <img src="./media/16.jpg" />
+    <img src="./media/17.jpg" />
+    <img src="./media/18.jpg" />
+    <img src="./media/20.jpg" />
+    <img src="./media/21.jpg" />
+    <img src="./media/22.jpg" />
+    <img src="./media/23.jpg" />
+    <img src="./media/24.jpg" />
+    <img src="./media/25.png" />
+    <img src="./media/26.jpg" />
+    <img src="./media/27.jpg" />
+    <img src="./media/28.jpg" />
+    <img src="./media/29.jpg" />
+    <img src="./media/30.png" />
+  </section>
+</body>
+
 </html>
